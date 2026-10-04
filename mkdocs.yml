@@ -98,3 +98,4 @@ nav:
   - Writings:
       - Overview: writings/index.md
       - Building production RAG — lessons so far: writings/building-production-rag.md
+      - Checkpointing patterns for long-running conversational agents: writings/checkpointing-patterns.md
