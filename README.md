@@ -4,7 +4,7 @@ Personal portfolio for **Geeta Sharma** — Generative AI Engineer.
 
 Written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), and deployed to GitHub Pages automatically on every push to `main` via GitHub Actions.
 
-**Live site:** https://geeta2790.github.io/geeta-portfolio/
+Live at [https://geetasharma.me](https://geetasharma.me).
 
 ## Structure
 
