@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>hey, i am <span className="gradient-name">geeta</span>.</h1>
+        <h1>Hey, I am <span className="gradient-name">Geeta</span>.</h1>
         <p className="tagline">
           generative ai engineer. agents, rag, and llms. learning in public.
         </p>
