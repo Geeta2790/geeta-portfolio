@@ -10,7 +10,7 @@ export default function Home() {
       <section className="hero">
         <h1>Hey, I am <span className="gradient-name">Geeta</span>.</h1>
         <p className="tagline">
-          generative ai engineer. agents, rag, and llms. learning in public.
+          Generative AI Engineer. Agents, RAG, and LLMs. Learning in public.
         </p>
       </section>
 

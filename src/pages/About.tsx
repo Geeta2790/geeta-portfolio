@@ -3,7 +3,7 @@ export default function About() {
     <>
       <section className="hero">
         <h1>About</h1>
-        <p className="tagline">generative ai engineer. based in gurgaon.</p>
+        <p className="tagline">Generative AI Engineer. Based in Gurgaon.</p>
       </section>
 
       <p>
