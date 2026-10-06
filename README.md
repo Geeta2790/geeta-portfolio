@@ -1,67 +1,64 @@
 # geeta-portfolio
 
-Personal portfolio for **Geeta Sharma** - Generative AI Engineer.
-
-Written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), and deployed to GitHub Pages automatically on every push to `main` via GitHub Actions.
+Personal site for **Geeta Sharma** - Generative AI engineer.
 
 Live at [https://geetasharma.me](https://geetasharma.me).
+
+Written in Markdown, rendered with React + Vite, deployed to GitHub Pages via GitHub Actions on every push to `main`.
 
 ## Structure
 
 ```
-.
-├── docs/
-│   ├── index.md              # Home / about
-│   ├── resume.md             # Resume
-│   ├── projects/             # Project case studies
-│   │   ├── index.md
-│   │   ├── cloud-provisioning-assistant.md
-│   │   └── hr-ai-assistant.md
-│   ├── writings/             # Blog-style posts
-│   │   ├── index.md
-│   │   └── building-production-rag.md
-│   └── stylesheets/
-│       └── extra.css
-├── mkdocs.yml                # Site config, theme, navigation
-├── requirements.txt          # mkdocs-material + extensions
-└── .github/workflows/
-    └── deploy.yml            # Build + deploy to GitHub Pages
+content/
+  books/
+    <book-slug>/
+      index.md              # book intro and metadata
+      01-<slug>.md          # chapter 1 (order via frontmatter)
+      02-<slug>.md
+      ...
+  writings/
+    <slug>.md               # shorter posts
+src/
+  components/               # Nav, Footer, Markdown renderer
+  pages/                    # Home, Books, Book, Chapter, Writings, Writing, Projects, About, NotFound
+  lib/content.ts            # markdown loading via import.meta.glob
+  styles/globals.css        # dark theme
+public/
+  CNAME                     # custom domain
+  404.html                  # SPA fallback
+.github/workflows/
+  deploy.yml                # build + deploy to GitHub Pages
 ```
 
 ## Adding content
 
-Everything is Markdown. To add a new post or project:
+### New writing
 
-1. Drop a `.md` file into `docs/writings/` or `docs/projects/`.
-2. Add it to the `nav:` section of `mkdocs.yml`.
-3. Commit and push to `main` - the Action builds and deploys automatically.
+1. Create `content/writings/<slug>.md` with frontmatter:
+   ```yaml
+   ---
+   title: My post
+   description: One-line summary
+   date: 2026-01-15
+   ---
+   ```
+2. Commit and push. It appears automatically.
 
-Supports GitHub-flavored markdown, admonitions, code highlighting, tables, task lists, Mermaid diagrams, and emoji.
+### New book
+
+1. Create `content/books/<book-slug>/index.md` with `title`, `description`, `tagline`, and `order`.
+2. Create chapters as `content/books/<book-slug>/<NN>-<slug>.md` with `order` in frontmatter.
+3. Commit and push.
 
 ## Running locally
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-mkdocs serve
+npm install
+npm run dev
 ```
 
-Open http://127.0.0.1:8000 - changes auto-reload.
+Opens on http://localhost:5173.
 
 ## Deploying
 
-Enable GitHub Pages in repo **Settings → Pages → Source: GitHub Actions**. After that, every push to `main` deploys automatically. Check the Actions tab for build status.
-
-## First push
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio scaffold"
-git branch -M main
-git remote add origin https://github.com/geeta2790/geeta-portfolio.git
-git push -u origin main
-```
-
-Then enable Pages as above.
+Push to `main`. The Action builds and deploys. See `.github/workflows/deploy.yml`.
