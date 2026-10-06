@@ -1,12 +1,12 @@
 ---
-title: Building production RAG — lessons so far
+title: Building production RAG - lessons so far
 description: A running list of things that actually matter when taking RAG pipelines from notebook to production.
 date: 2026-10-04
 ---
 
-# Building production RAG — lessons so far
+# Building production RAG - lessons so far
 
-_Draft — I'll keep expanding this as I ship more._
+_Draft - I'll keep expanding this as I ship more._
 
 A notebook RAG demo takes an afternoon. A production RAG system that HR, finance, or ops actually trusts takes a lot longer. Here's what I've learned from shipping a couple of them.
 
@@ -20,7 +20,7 @@ Users forgive wrong answers more easily than they forgive opaque ones. If every 
 
 ## 3. Deterministic validation at the edges
 
-Let the LLM elicit intent and generate language. Let plain Python enforce invariants — required fields, numeric ranges, cross-field dependencies, allowed enum values. LLMs are bad at being strict; they're great at being conversational.
+Let the LLM elicit intent and generate language. Let plain Python enforce invariants - required fields, numeric ranges, cross-field dependencies, allowed enum values. LLMs are bad at being strict; they're great at being conversational.
 
 ## 4. Checkpoint the conversation, not just the message
 
@@ -28,11 +28,11 @@ If your agent is multi-turn or multi-step, checkpoint its state (LangGraph's che
 
 ## 5. Fallback and escalation are features
 
-Design the "I don't know" path on day one. A graph that routes low-confidence or out-of-scope queries to a human — with the conversation attached — is dramatically more useful than a graph that always answers.
+Design the "I don't know" path on day one. A graph that routes low-confidence or out-of-scope queries to a human - with the conversation attached - is dramatically more useful than a graph that always answers.
 
 ## 6. Build an evaluation harness early
 
-Golden fixtures, intent-level eval sets, retrieval precision/recall against known questions — all of this feels like overhead until the day you swap models or re-chunk your corpus and need to know what broke. Build it before you need it.
+Golden fixtures, intent-level eval sets, retrieval precision/recall against known questions - all of this feels like overhead until the day you swap models or re-chunk your corpus and need to know what broke. Build it before you need it.
 
 ---
 

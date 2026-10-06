@@ -1,5 +1,5 @@
 site_name: Geeta Sharma
-site_description: Generative AI Engineer — building Agentic AI, RAG, and LLM-powered systems.
+site_description: Generative AI Engineer - building Agentic AI, RAG, and LLM-powered systems.
 site_author: Geeta Sharma
 site_url: https://geetasharma.me/
 
@@ -97,5 +97,5 @@ nav:
       - Enterprise HR AI Assistant: projects/hr-ai-assistant.md
   - Writings:
       - Overview: writings/index.md
-      - Building production RAG — lessons so far: writings/building-production-rag.md
+      - Building production RAG - lessons so far: writings/building-production-rag.md
       - Checkpointing patterns for long-running conversational agents: writings/checkpointing-patterns.md

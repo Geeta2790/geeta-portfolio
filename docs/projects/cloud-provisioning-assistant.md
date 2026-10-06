@@ -1,23 +1,23 @@
 ---
-title: Enterprise Cloud Provisioning AI Assistant — AWS & Azure
+title: Enterprise Cloud Provisioning AI Assistant - AWS & Azure
 description: LangGraph-based conversational assistant that collects, validates, and emits Terraform-compatible configs for AWS EC2/RDS and Azure VMs, with human-in-the-loop and PostgreSQL checkpointing.
 ---
 
-# Enterprise Cloud Provisioning AI Assistant — AWS & Azure
+# Enterprise Cloud Provisioning AI Assistant - AWS & Azure
 
 **Role:** Generative AI Engineer, Dataclaps.in
 **Stack:** Python · FastAPI · LangGraph · PostgreSQL · Redis · Pydantic · Docker
 
 ## The problem
 
-Cloud provisioning for AWS and Azure requires dozens of interdependent fields — regions, availability zones, instance types, OS images, storage sizes, networking choices — and the valid options for one field often depend on earlier choices. Giving operators a form to fill out leads to invalid combinations and support tickets; letting them chat with a vanilla LLM leads to confidently wrong Terraform.
+Cloud provisioning for AWS and Azure requires dozens of interdependent fields - regions, availability zones, instance types, OS images, storage sizes, networking choices - and the valid options for one field often depend on earlier choices. Giving operators a form to fill out leads to invalid combinations and support tickets; letting them chat with a vanilla LLM leads to confidently wrong Terraform.
 
 ## What I built
 
 A LangGraph-based conversational assistant that:
 
 1. **Asks the right questions dynamically** based on the resource type (EC2, RDS, Azure VM) and the user's earlier answers.
-2. **Validates every input deterministically** in Python — required fields, numeric constraints, supported options, cross-field dependencies.
+2. **Validates every input deterministically** in Python - required fields, numeric constraints, supported options, cross-field dependencies.
 3. **Preserves conversation state** across sessions via PostgreSQL-backed LangGraph checkpointing, so users can leave and resume.
 4. **Keeps a human in the loop** at critical decision points instead of blindly provisioning.
 5. **Emits Terraform-compatible JSON** by merging user inputs, defaults, Redis-cached enrichment data, and enterprise API responses.
@@ -34,7 +34,7 @@ Regions determine available zones; zones determine available instance types; ins
 
 ### Deterministic validation, not LLM validation
 
-LLMs are great at eliciting intent, bad at enforcing invariants. All field-level validation is pure Python — the LLM asks questions, Python decides what's valid. This split made the system testable and auditable.
+LLMs are great at eliciting intent, bad at enforcing invariants. All field-level validation is pure Python - the LLM asks questions, Python decides what's valid. This split made the system testable and auditable.
 
 ### Three endpoints, one conversation
 

@@ -5,17 +5,17 @@ hide:
 
 # Geeta Sharma
 
-<p class="tagline">Generative AI Engineer — building Agentic AI, RAG, and LLM-powered backend systems.</p>
+<p class="tagline">Generative AI Engineer - building Agentic AI, RAG, and LLM-powered backend systems.</p>
 
-Hi, I'm Geeta. I'm a Generative AI Engineer based in Gurgaon, India with 4+ years of experience across AI engineering, backend services, and enterprise automation. These days I spend most of my time building production-oriented Agentic AI applications — stateful multi-agent workflows, RAG pipelines, and LLM-powered backends with Python, FastAPI, LangChain, and LangGraph.
+Hi, I'm Geeta. I'm a Generative AI Engineer based in Gurgaon, India with 4+ years of experience across AI engineering, backend services, and enterprise automation. These days I spend most of my time building production-oriented Agentic AI applications - stateful multi-agent workflows, RAG pipelines, and LLM-powered backends with Python, FastAPI, LangChain, and LangGraph.
 
 I enjoy turning fuzzy business requirements into reliable AI backends: structured outputs, retries, fallbacks, human-in-the-loop checkpoints, and the plumbing that makes agent systems actually survive production.
 
 ## What I'm working on
 
-- **Agentic AI backends** at [Dataclaps.in](https://dataclaps.in) — LangGraph-based multi-agent systems with checkpointing, tool orchestration, and human-in-the-loop flows.
-- **RAG pipelines** over enterprise documents — chunking, embeddings, semantic retrieval, and source-grounded responses.
-- **Multi-modal and multi-agent orchestration** — evaluating AutoGen and CrewAI patterns alongside LangGraph.
+- **Agentic AI backends** at [Dataclaps.in](https://dataclaps.in) - LangGraph-based multi-agent systems with checkpointing, tool orchestration, and human-in-the-loop flows.
+- **RAG pipelines** over enterprise documents - chunking, embeddings, semantic retrieval, and source-grounded responses.
+- **Multi-modal and multi-agent orchestration** - evaluating AutoGen and CrewAI patterns alongside LangGraph.
 
 See the [Projects](projects/index.md) section for case studies, or jump to the [Resume](resume.md).
 
@@ -40,6 +40,6 @@ See the [Projects](projects/index.md) section for case studies, or jump to the [
 
 ## Elsewhere
 
-- Email — [geeta.hr27@gmail.com](mailto:geeta.hr27@gmail.com)
-- GitHub — [@geeta2790](https://github.com/geeta2790)
-- LinkedIn — _TODO: add link_
+- Email - [geeta.hr27@gmail.com](mailto:geeta.hr27@gmail.com)
+- GitHub - [@geeta2790](https://github.com/geeta2790)
+- LinkedIn - _TODO: add link_

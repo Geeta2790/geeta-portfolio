@@ -1,6 +1,6 @@
 # Resume
 
-**Geeta Sharma** — Generative AI Engineer
+**Geeta Sharma** - Generative AI Engineer
 Gurgaon, India · +91-8683856767 · [geeta.hr27@gmail.com](mailto:geeta.hr27@gmail.com) · [GitHub](https://github.com/geeta2790)
 
 > _Prefer the PDF? [Download the latest version](https://github.com/geeta2790/geeta-portfolio/raw/main/docs/assets/geeta-sharma-resume.pdf)._ <!-- TODO: upload PDF under docs/assets/ -->
@@ -24,7 +24,7 @@ Technology professional with 4+ years of experience across AI engineering, data 
 
 ## Experience
 
-### Generative AI Engineer — Dataclaps.in · Gurgaon, India
+### Generative AI Engineer - Dataclaps.in · Gurgaon, India
 *Mar 2026 – Present*
 
 - Develop enterprise Generative AI and Agentic AI backend services using Python, FastAPI, LangChain, and LangGraph.
@@ -33,7 +33,7 @@ Technology professional with 4+ years of experience across AI engineering, data 
 - Integrate LLM workflows with Redis, PostgreSQL, vector databases, and enterprise APIs.
 - Implement Pydantic validation, structured output handling, logging, exception handling, retry mechanisms, and fallback workflows to improve application reliability.
 
-**Enterprise Cloud Provisioning AI Assistant — AWS and Azure** · [case study →](projects/cloud-provisioning-assistant.md)
+**Enterprise Cloud Provisioning AI Assistant - AWS and Azure** · [case study →](projects/cloud-provisioning-assistant.md)
 
 - LangGraph-based conversational assistant that collects and validates configuration details for AWS EC2, AWS RDS, and Azure Virtual Machines.
 - Stateful Agentic AI workflows with dynamic question handling, conditional routing, human-in-the-loop interactions, session management, and PostgreSQL-backed checkpointing.
@@ -49,7 +49,7 @@ Technology professional with 4+ years of experience across AI engineering, data 
 - Document chunking, embeddings, semantic retrieval, source-grounded responses, structured outputs, conversation-state management, fallback handling, and escalation for unsupported queries.
 - PostgreSQL, ChromaDB, OpenAI models, and enterprise APIs with Docker-based deployment, logging, and automated testing.
 
-### AI Engineer — Rostan Technologies · Gurgaon, India
+### AI Engineer - Rostan Technologies · Gurgaon, India
 *Apr 2022 – Feb 2026*
 
 - Developed Python- and SQL-based data-processing and business-automation solutions for enterprise reporting and operational use cases.
@@ -62,6 +62,6 @@ Technology professional with 4+ years of experience across AI engineering, data 
 
 ## Certifications
 
-- Generative AI with Large Language Models — DeepLearning.AI & AWS, Coursera, 2025
-- ChatGPT Prompt Engineering for Developers — DeepLearning.AI
-- Building Systems with the ChatGPT API — DeepLearning.AI & OpenAI, 2024
+- Generative AI with Large Language Models - DeepLearning.AI & AWS, Coursera, 2025
+- ChatGPT Prompt Engineering for Developers - DeepLearning.AI
+- Building Systems with the ChatGPT API - DeepLearning.AI & OpenAI, 2024

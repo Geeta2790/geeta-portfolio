@@ -1,6 +1,6 @@
 # geeta-portfolio
 
-Personal portfolio for **Geeta Sharma** — Generative AI Engineer.
+Personal portfolio for **Geeta Sharma** - Generative AI Engineer.
 
 Written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), and deployed to GitHub Pages automatically on every push to `main` via GitHub Actions.
 
@@ -34,7 +34,7 @@ Everything is Markdown. To add a new post or project:
 
 1. Drop a `.md` file into `docs/writings/` or `docs/projects/`.
 2. Add it to the `nav:` section of `mkdocs.yml`.
-3. Commit and push to `main` — the Action builds and deploys automatically.
+3. Commit and push to `main` - the Action builds and deploys automatically.
 
 Supports GitHub-flavored markdown, admonitions, code highlighting, tables, task lists, Mermaid diagrams, and emoji.
 
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-Open http://127.0.0.1:8000 — changes auto-reload.
+Open http://127.0.0.1:8000 - changes auto-reload.
 
 ## Deploying
 
