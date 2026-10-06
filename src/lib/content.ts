@@ -1,5 +1,3 @@
-import matter from "gray-matter";
-
 export interface Frontmatter {
   title?: string;
   description?: string;
@@ -33,9 +31,23 @@ const rawFiles = import.meta.glob("/content/**/*.md", {
   eager: true,
 }) as Record<string, string>;
 
+const FM_RE = /^---\s*\n([\s\S]*?)\n---\s*\n?/;
+
 function parse(raw: string): { frontmatter: Frontmatter; body: string } {
-  const parsed = matter(raw);
-  return { frontmatter: parsed.data as Frontmatter, body: parsed.content };
+  const m = raw.match(FM_RE);
+  if (!m) return { frontmatter: {}, body: raw };
+  const fm: Frontmatter = {};
+  for (const line of m[1].split("\n")) {
+    const kv = line.match(/^(\w+):\s*(.*)$/);
+    if (!kv) continue;
+    const key = kv[1] as keyof Frontmatter;
+    let value: string | number | boolean = kv[2].trim().replace(/^["'](.*)["']$/, "$1");
+    if (value === "true") value = true;
+    else if (value === "false") value = false;
+    else if (/^-?\d+$/.test(value as string)) value = parseInt(value as string, 10);
+    (fm as Record<string, unknown>)[key] = value;
+  }
+  return { frontmatter: fm, body: raw.slice(m[0].length) };
 }
 
 function slugFromPath(path: string): string {
