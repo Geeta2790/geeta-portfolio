@@ -8,17 +8,17 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>Geeta Sharma</h1>
+        <h1>hey, i am geeta.</h1>
         <p className="tagline">
-          generative ai, agents, and retrieval. learning in public.
+          generative ai engineer. agents, rag, and llms. learning in public.
         </p>
       </section>
 
       <p>
-        I'm a Generative AI engineer based in Gurgaon. I build production
-        backends for Agentic AI and RAG - stateful workflows, tool orchestration,
-        structured outputs, and the plumbing that makes agent systems survive
-        contact with real users.
+        I build production backends for Agentic AI and RAG systems - stateful
+        workflows, tool orchestration, structured outputs, and the plumbing
+        that makes agent systems survive contact with real users. Based in
+        Gurgaon, India.
       </p>
       <p>
         This site is where I keep notes, long-form books, and project write-ups.
